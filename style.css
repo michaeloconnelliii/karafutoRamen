@@ -19,7 +19,7 @@ body {
 /* ======= Resuable Components ======= */
 .grid-section {
     display: grid;
-    grid-template-columns: minmax(1.5em, 1fr) minmax(230px, 1200px) minmax(1.5em, 1fr);
+    grid-template-columns: minmax(1.5em, 1fr) minmax(230px, 900px) minmax(1.5em, 1fr);
 }
 
 
@@ -31,5 +31,18 @@ body {
     background-size: cover;
     background-position: center;
 
-    min-height: 50vh;
+    min-height: 60vh;
+}
+
+.corousel-btn {
+    position: relative;
+    top: 45%;
+}
+
+.courousel-btn-right {
+    right: -96%;
+}
+
+.corousel-btn img {
+    width: 12px;
 }
