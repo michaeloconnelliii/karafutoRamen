@@ -1,0 +1,35 @@
+/* ======= Global Styles ======= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* ======= Typography ======= */
+h1 {
+    font-family: 'MuseoModerno', cursive;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* ======= Resuable Components ======= */
+.grid-section {
+    display: grid;
+    grid-template-columns: minmax(1.5em, 1fr) minmax(230px, 1200px) minmax(1.5em, 1fr);
+}
+
+
+/* ======= Main Page ======= */
+.carousel {
+    grid-column: 2;
+
+    background-image: url(img/ramen-burger.jpg);
+    background-size: cover;
+    background-position: center;
+
+    min-height: 50vh;
+}
