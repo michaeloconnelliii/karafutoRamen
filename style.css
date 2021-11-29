@@ -83,11 +83,11 @@ body {
     border: 0;
 }
 
-.courousel-btn-left {
+.courousel-btn-next {
     right: 1%;
 }
 
-.courousel-btn-right {
+.courousel-btn-prev {
     left: 1%;
 }
 
