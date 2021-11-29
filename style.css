@@ -56,6 +56,23 @@ body {
     list-style: none;
 }
 
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
 .corousel-btn {
     position: absolute;
     top: 50%;
@@ -66,10 +83,6 @@ body {
     border: 0;
 }
 
-.corousel-btn img {
-    background-color: white;
-}
-
 .courousel-btn-left {
     right: 1%;
 }
@@ -78,26 +91,22 @@ body {
     left: 1%;
 }
 
-.corousel-btn img {
-    width: 12px;
-}
-
 .carousel-nav {
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    margin: 0 12px;
 }
 
 .carousel-indicator {
     margin: 0 5px;
     border: 0;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     background: rgba(0, 0, 0, .3);
+    cursor: pointer;
 }
 
 .carousel-indicator.current-slide {
-    background: rgba(0, 0, 0.75);
+    background: black;
 }
