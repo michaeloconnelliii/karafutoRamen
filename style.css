@@ -45,15 +45,18 @@ body {
 }
 
 .carousel-track-container {
-    background: limegreen;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel-track {
+    position: relative;
+    height: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
+    transition: transform 250ms ease-in;
 }
 
 .arrow {
@@ -73,7 +76,7 @@ body {
     -webkit-transform: rotate(135deg);
   }
 
-.corousel-btn {
+.carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -83,11 +86,11 @@ body {
     border: 0;
 }
 
-.courousel-btn-next {
+.carousel-btn-next {
     right: 1%;
 }
 
-.courousel-btn-prev {
+.carousel-btn-prev {
     left: 1%;
 }
 
@@ -109,4 +112,8 @@ body {
 
 .carousel-indicator.current-slide {
     background: black;
+}
+
+.is-hidden {
+    display: none;
 }
