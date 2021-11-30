@@ -8,26 +8,120 @@ body {
 }
 
 /* ======= Typography ======= */
-h1 {
+.logo {
     font-family: 'MuseoModerno', cursive;
+    font-size: 0.9rem;
 }
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* Nav */
+.nav-menu {
+    font-size: 1.4rem;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu li a:hover, .nav-menu li a:focus {
+    text-decoration: underline;
+}
+
 /* ======= Resuable Components ======= */
-/* .grid-section {
+.main-grid {
     display: grid;
-    grid-template-columns: minmax(1.5em, 1fr) minmax(230px, 900px) minmax(1.5em, 1fr);
-} */
+    grid-template-columns: minmax(1.5em, 1fr) minmax(0, 900px) minmax(1.5em, 1fr);
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: minmax(0px, 500px) minmax(1.5em, 1fr) 48px;
+    width: 100%;
+}
 
 
 /* ======= Main Page ======= */
+/* header/ nav */
+.logo {
+    grid-column: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    background: #000;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    transform: translateX(0);
+    transition: transform 250ms;
+}
+
+.nav-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    color: white;
+    order: 0;
+}
+
+.nav-menu {
+    height: 100%;
+    width: 35%;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav-btn {
+    grid-column: 3;
+    z-index: 3;
+    
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 10px;
+    background: none;
+}
+
+.nav-open {
+    transform: translateX(-100%);
+}
+
+.nav-close-btn {
+    align-self: flex-end;
+}
+
+.nav-btn img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+}
+
+/* Carousel */
 .carousel {
+    grid-column: 2;
+
     position: relative;
-    height: 600px;
-    width: 600px;
+    height: 150px;
+    width: 150px;
     margin: 0 auto;
 }
 
@@ -80,7 +174,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 100;
+    z-index: 3;
     cursor: pointer;
     background: transparent;
     border: 0;

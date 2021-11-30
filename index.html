@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>The UnOriginal Burger</title>
+        <title>Kurafuto Ramen</title>
         <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1 class="logo title-page">The UnOriginal Burger</h1>
+        <header class="header-grid">
+            <h1 class="logo title-page">Kurafuto Ramen</h1>
+            <button class="nav-btn nav-open-btn">
+                <img src="img/ramen-black.png" id="nav-img-open">
+            </button>
             <nav>
+                <div class="nav-top">
+                    <h2 class="logo nav-logo title-page">Kurafuto Ramen</h2>
+                    <button class="nav-btn nav-close-btn">
+                        <img src="img/ramen-white.png" id="nav-img-close">
+                    </button>
+                </div>
                 <ul class="nav-menu">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Menu</li>
-                    <li>Contact</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="grid-section">
+            <section class="carousel-section main-grid">
                 <div class="carousel">
                     <button class="carousel-btn carousel-btn-prev is-hidden">
-                        <p><i class="arrow left"></i></p>
+                        <i class="arrow left"></i>
                     </button>
                     <div class="carousel-track-container">
                         <ul class="carousel-track">
@@ -39,7 +48,7 @@
                         </ul>
                     </div>
                     <button class="carousel-btn carousel-btn-next">
-                        <p><i class="arrow right"></i></p>
+                        <i class="arrow right"></i>
                     </button>
                     <div class="carousel-nav">
                         <button class="carousel-indicator current-slide"></button>
@@ -50,13 +59,14 @@
             </section>
         </main>
         <footer class="footer">
-            <p>Created and designed by <a href="#"></a>Michael O'Connell</p></p>
+            <p>Created and designed by <a href="#"></a>Michael O'Connell</p>
             <ul class="social-list">
                 <li><a href="#" aria-label="Facebook">Test1</a></li>
                 <li><a href="#" aria-label="Twitter">Test2</a></li>
                 <li><a href="#" aria-label="Yelp">Test3</a></li>
                 <li><a href="#" aria-label="Email">Test4</a></li>
             </ul>
+            <div>Ramen Icons made by <a href="https://www.flaticon.com/authors/freepik" title="freepik">freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </footer>
     </body>
     <script src="index.js"></script>
