@@ -51,18 +51,19 @@ body {
 }
 
 nav {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
     background: #000;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 100%;
-    transform: translateX(0);
-    transition: transform 250ms;
+    transition: 250ms;
 }
 
 .nav-top {
@@ -98,7 +99,7 @@ nav {
 }
 
 .nav-open {
-    transform: translateX(-100%);
+    height: 100vh;
 }
 
 .nav-close-btn {
