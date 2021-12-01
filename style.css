@@ -294,3 +294,159 @@ footer > * {
 .author {
     margin-bottom: 0.2em;
 }
+
+/* ======= Media Queries ======= */
+@media (min-width: 270px) {
+    /* ======= Typography ======= */
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .headlines {
+        font-size: 0.9rem;
+    }
+
+    /* Nav */
+    .nav-menu {
+        font-size: 1.7rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.7rem;
+    }
+
+    .social-list {
+        font-size: 0.9rem;
+    }
+
+    /* ======= Carousel ======= */
+    .carousel {
+        height: 215px;
+        width: 215px;
+    }
+}
+
+@media (min-width: 320px) {
+    /* ======= Typography ======= */
+    .logo {
+        font-size: 2.4rem;
+    }
+    
+    .headlines {
+        font-size: 1.07rem;
+    }
+
+    /* Nav */
+    .nav-menu {
+        font-size: 1.7rem;
+    }
+
+    .nav-btn {        
+        padding: 5px;
+    }
+
+    .social-list {
+        font-size: 1.1rem;
+    }
+
+    /* ======= Carousel ======= */
+    .carousel {
+        height: 260px;
+        width: 260px;
+    }
+
+    @media(min-height: 800px) {
+        /* ======= Typography ======= */
+        .logo {
+            font-size: 2.9rem;
+        }
+        
+        .headlines {
+            font-size: 1.2rem;
+        }
+
+        /* Nav */
+        .nav-menu {
+            font-size: 2.5rem;
+        }
+
+        /* Footer */
+        footer {
+            font-size: 0.9rem;
+        }
+
+        .social-list {
+            font-size: 1.3rem;
+        }
+
+        /* ======= Carousel ======= */
+        .carousel {
+            height: 315px;
+            width: 315px;
+        }
+
+        .arrow {
+            border-width: 0 5px 5px 0;
+            padding: 7px;
+        }
+
+        .carousel-indicator {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+@media (min-width: 410px) {
+    /* ======= Typography ======= */
+    .logo {
+        font-size: 2.9rem;
+    }
+    
+    .headlines {
+        font-size: 1.4rem;
+    }
+
+    .nav-menu {
+        font-size: 2.5rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .social-list {
+        font-size: 1.3rem;
+    }
+
+    /* ======= Carousel ======= */
+    .carousel {
+        height: 315px;
+        width: 315px;
+    }
+
+    .arrow {
+        border-width: 0 5px 5px 0;
+        padding: 7px;
+    }
+
+    .carousel-indicator {
+        width: 16px;
+        height: 16px;
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 600px) {
+    /* ======= Carousel ======= */
+    .carousel {
+        height: 425px;
+        width: 500px;
+    }
+}
+
+/* desktop layout */
+@media (min-width: 700px) {
+}
