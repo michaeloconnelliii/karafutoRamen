@@ -10,73 +10,71 @@
         <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">      
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css" integrity="sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ==" crossorigin="anonymous" referrerpolicy="no-referrer">   
     </head>
-    <body>
-        <div class="flex-wrapper">
-            <header class="header-grid">
-                <h1 class="logo title-page mobile-logo">Kurafuto Ramen</h1>
-                <button class="nav-btn nav-open-btn">
-                    <img src="img/ramen-black.png" id="nav-img-open">
-                </button>
-                <nav>
-                    <div class="nav-top">
-                        <h2 class="logo nav-logo title-page">Kurafuto Ramen</h2>
-                        <button class="nav-btn nav-close-btn">
-                            <img src="img/ramen-white.png" id="nav-img-close">
-                        </button>
-                    </div>
-                    <ul class="nav-menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <div class="main-grid headlines">
-                    <p><strong>Craft ramen</strong> for the modern era</p>
-                    <p>Delivery, dine out and takeout options available</p>
+    <body class="main-grid">
+        <header>
+            <h1 class="logo title-page mobile-logo">Kurafuto Ramen</h1>
+            <button class="nav-btn nav-open-btn">
+                <img src="img/ramen-black.png" id="nav-img-open">
+            </button>
+            <nav>
+                <div class="nav-top">
+                    <h2 class="logo nav-logo title-page">Kurafuto Ramen</h2>
+                    <button class="nav-btn nav-close-btn">
+                        <img src="img/ramen-white.png" id="nav-img-close">
+                    </button>
                 </div>
-                <section class="carousel-section main-grid">
-                    <div class="carousel">
-                        <button class="carousel-btn carousel-btn-prev is-hidden">
-                            <i class="arrow left"></i>
-                        </button>
-                        <div class="carousel-track-container">
-                            <ul class="carousel-track">
-                                <li class="carousel-slide current-slide">
-                                    <img src="img/ramen2.jpg">
-                                </li>
-                                <li class="carousel-slide">
-                                    <img src="img/ramen5.jpg">
-                                </li>
-                                <li class="carousel-slide">
-                                    <img src="img/ramen3.jpg">
-                                </li>
-                            </ul>
-                        </div>
-                        <button class="carousel-btn carousel-btn-next">
-                            <i class="arrow right"></i>
-                        </button>
-                        <div class="carousel-nav">
-                            <button class="carousel-indicator current-slide"></button>
-                            <button class="carousel-indicator"></button>
-                            <button class="carousel-indicator"></button>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer main-grid">
-                <p class="author contributors">Created and designed by <a href="#"></a><a href="https://github.com/michaeloconnelliii">Michael O'Connell</a</p>
-                <ul class="social-list">
-                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a></li>
-                    <li><a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                <ul class="nav-menu">
+                    <li><a class="active-link" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-                <div class="attribution contributors">Ramen Icons made by <a href="https://www.flaticon.com/authors/freepik" title="freepik">freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            </footer>
-        </div>
+            </nav>
+        </header>
+        <main>
+            <div class="headlines">
+                <p><strong>Craft ramen</strong> for the modern era</p>
+                <p>Delivery, dine out and takeout options available</p>
+            </div>
+            <section class="carousel-section main-grid">
+                <div class="carousel">
+                    <button class="carousel-btn carousel-btn-prev is-hidden">
+                        <i class="arrow left"></i>
+                    </button>
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-slide current-slide">
+                                <img src="img/ramen2.jpg">
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="img/ramen5.jpg">
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="img/ramen3.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-btn carousel-btn-next">
+                        <i class="arrow right"></i>
+                    </button>
+                    <div class="carousel-nav">
+                        <button class="carousel-indicator current-slide"></button>
+                        <button class="carousel-indicator"></button>
+                        <button class="carousel-indicator"></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer main-grid">
+            <p class="author contributors">Created and designed by <a href="https://github.com/michaeloconnelliii">Michael O'Connell</a</p>
+            <ul class="social-list">
+                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a></li>
+                <li><a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+            <div class="attribution contributors">Ramen Icons made by <a href="https://www.flaticon.com/authors/freepik" title="freepik">freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </footer>
     </body>
     <script src="index.js"></script>
 </html>

@@ -7,6 +7,11 @@
 
 body {
     margin: 0;
+    height: 100vh;
+}
+
+body > * {
+    grid-column: 2 / -2;
 }
 
 main {
@@ -27,13 +32,6 @@ strong {
     color: red;
 }
 
-.flex-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-}
-
 /* ======= Typography ======= */
 .logo {
     font-family: 'Bebas Neue', cursive;
@@ -49,6 +47,11 @@ body {
     font-weight: 700;
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* Nav */
 .nav-menu {
     font-size: 1.4rem;
@@ -59,7 +62,7 @@ body {
     color: white;
 }
 
-.nav-menu li a:hover, .nav-menu li a:focus {
+.nav-menu li a:hover, .nav-menu li a:focus, .nav-menu li a.active-link {
     text-decoration: underline;
     text-decoration-color: red;
 }
@@ -76,7 +79,7 @@ footer {
 /* ======= Resuable Components ======= */
 .main-grid {
     display: grid;
-    grid-template-columns: minmax(1.5em, 1fr) minmax(0, 1100px) minmax(1.5em, 1fr);
+    grid-template-columns: minmax(1.5em, 1fr) minmax(0, 900px) minmax(1.5em, 1fr);
 }
 
 .header-grid {
@@ -89,7 +92,6 @@ footer {
 /* ======= Main Page ======= */
 /* header/ nav */
 .logo {
-    grid-column: 1;
     margin-left: 0.5em;
 }
 
@@ -100,18 +102,19 @@ nav {
     top: 0;
     left: 0;
     overflow-y: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     position: fixed;
     background: #000;
     transition: 250ms;
 }
 
+nav > * {
+    grid-column: 2 / -2;
+}
+
 .nav-top {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-logo {
@@ -120,14 +123,12 @@ nav {
 }
 
 .nav-menu {
-    height: 100%;
-    width: 50%;
-    max-width: 400px;
-    align-self: center;
+    height: 70%;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 1em;
 }
 
 .nav-btn {
@@ -143,6 +144,15 @@ nav {
 
 .nav-open {
     height: 100vh;
+}
+
+.nav-open-btn {
+    /* margin-bottom: 1em; */
+}
+
+.nav-close-btn {
+    margin-bottom: 1em;
+    margin-right: 1em;
 }
 
 .nav-btn img {
@@ -299,7 +309,7 @@ footer > * {
 @media (min-width: 270px) {
     /* ======= Typography ======= */
     .logo {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .headlines {
@@ -311,6 +321,10 @@ footer > * {
         font-size: 1.7rem;
     }
 
+    .nav-open-btn {
+        margin-bottom: 2em;
+    }
+
     /* Footer */
     footer {
         font-size: 0.7rem;
@@ -320,19 +334,14 @@ footer > * {
         font-size: 0.9rem;
     }
 
-    @media(min-height: 600px) {
-        .carousel {
-            height: 33vh;
-        }
-    }
 }
 
 @media (min-width: 320px) {
     /* ======= Typography ======= */
     .logo {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
-    
+
     .headlines {
         font-size: 1.07rem;
     }
@@ -400,6 +409,10 @@ footer > * {
         font-size: 2.5rem;
     }
 
+    .nav-open-btn {
+        margin-bottom: 1em;
+    }
+
     /* Footer */
     footer {
         font-size: 0.9rem;
@@ -421,8 +434,18 @@ footer > * {
     }
 }
 
+@media (min-width: 600px) {
+    .carousel {
+        height: 50vh;
+    }
+
+    .nav-open-btn {
+        margin-bottom: 1em;
+    }
+}
+
 /* desktop layout */
-@media (min-width: 700px) {
+@media (min-width: 725px) {
     /* ======= Typography ======= */
     .logo {
         color: black;
@@ -443,6 +466,10 @@ footer > * {
         text-decoration-color: red;
     }
 
+    .nav-top {
+        align-self: center;
+    }
+
     /* header */
     .header-grid {
         display: unset;
@@ -454,6 +481,12 @@ footer > * {
         position: static;
         background: none;
         transition: none;
+        overflow-y: visible;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        width: 100%;
     }
 
     .mobile-logo, .nav-open-btn, .nav-close-btn {
@@ -466,7 +499,7 @@ footer > * {
 
     /* ======= Carousel ======= */
     .carousel {
-        height: 62vh;
+        height: 65vh;
     }
 
     .carousel-slide:nth-of-type(2) img{
