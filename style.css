@@ -1,4 +1,4 @@
-/* TODO - Fix header for mobile, add some location/contact data in footer */
+/* TODO - Fine tune the footer font size responsiveness */
 
 /* ======= Global Styles ======= */
 * {
@@ -36,6 +36,10 @@ strong {
 .logo {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
+    text-decoration: overline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: red;
+    text-decoration-skip-ink: auto;
 }
 
 body {
@@ -48,8 +52,12 @@ body {
 }
 
 header {
+    position: relative;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
 }
 
 /* Nav */
@@ -93,6 +101,7 @@ footer {
 /* header/ nav */
 .logo {
     margin-left: 0.5em;
+    align-self: center;
 }
 
 nav {
@@ -117,6 +126,20 @@ nav > * {
     justify-content: space-around;
 }
 
+.nav-open {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(1.5em, 1fr) minmax(0, 900px) minmax(1.5em, 1fr);
+}
+
+.nav-open > * {
+    grid-column: 2 / -2;
+}
+
+.nav-open .nav-menu {
+    height: 100vh;
+}
+
 .nav-logo {
     color: white;
     order: 0;
@@ -127,8 +150,7 @@ nav > * {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 1em;
+    gap: 1.25em;
 }
 
 .nav-btn {
@@ -140,19 +162,8 @@ nav > * {
     border: none;
     padding: 10px;
     background: none;
-}
 
-.nav-open {
-    height: 100vh;
-}
-
-.nav-open-btn {
-    /* margin-bottom: 1em; */
-}
-
-.nav-close-btn {
-    margin-bottom: 1em;
-    margin-right: 1em;
+    margin-bottom: 0.4em;
 }
 
 .nav-btn img {
@@ -166,6 +177,10 @@ nav > * {
 }
 
 /* Headlines */
+.headlines {
+    margin-top: 1em;
+}
+
 .headlines > * {
     grid-column: 2;
     text-align: center;
@@ -297,12 +312,18 @@ footer > * {
     grid-column: 2;
 }
 
-.contributors {
+.contributors, .address {
     text-align: center;
+    margin-bottom: 0.2em;
+}
+
+.address {
+    margin-bottom: 0;
 }
 
 .author {
-    margin-bottom: 0.2em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ======= Media Queries ======= */
@@ -316,18 +337,13 @@ footer > * {
         font-size: 0.9rem;
     }
 
+    .footer {
+        font-size: 0.5rem;
+    }
+
     /* Nav */
     .nav-menu {
         font-size: 1.7rem;
-    }
-
-    .nav-open-btn {
-        margin-bottom: 2em;
-    }
-
-    /* Footer */
-    footer {
-        font-size: 0.7rem;
     }
 
     .social-list {
@@ -362,7 +378,7 @@ footer > * {
     @media(min-height: 800px) {
         /* ======= Typography ======= */
         .logo {
-            font-size: 2.9rem;
+            font-size: 2.25rem;
         }
         
         .headlines {
@@ -370,13 +386,17 @@ footer > * {
         }
 
         /* Nav */
+        .logo {
+            align-self: center;
+        }
+
         .nav-menu {
             font-size: 2.5rem;
         }
 
         /* Footer */
-        footer {
-            font-size: 0.9rem;
+        .footer {
+            font-size: 0.7rem;
         }
 
         .social-list {
@@ -409,13 +429,9 @@ footer > * {
         font-size: 2.5rem;
     }
 
-    .nav-open-btn {
-        margin-bottom: 1em;
-    }
-
     /* Footer */
-    footer {
-        font-size: 0.9rem;
+    .footer {
+        font-size: 0.8rem;
     }
 
     .social-list {
@@ -440,7 +456,7 @@ footer > * {
     }
 
     .nav-open-btn {
-        margin-bottom: 1em;
+        /* margin-bottom: 1em; */
     }
 }
 
@@ -470,6 +486,11 @@ footer > * {
         align-self: center;
     }
 
+    /* Footer */
+    .social-list {
+        font-size: 1.5rem;
+    }
+
     /* header */
     .header-grid {
         display: unset;
@@ -483,7 +504,7 @@ footer > * {
         transition: none;
         overflow-y: visible;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-around;
         height: 100px;
         width: 100%;
