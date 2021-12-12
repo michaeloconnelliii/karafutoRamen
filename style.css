@@ -138,6 +138,7 @@ nav > * {
     height: 100vh;
     display: grid;
     grid-template-columns: minmax(1.5em, 1fr) minmax(0, 900px) minmax(1.5em, 1fr);
+    z-index: 100;
 }
 
 .nav-open > * {
