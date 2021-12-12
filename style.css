@@ -541,3 +541,45 @@ footer > * {
 .about > * {
     text-align: center;
 }
+
+.img-holder img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.description {
+    font-size: 0.85rem;
+}
+
+/* desktop layout */
+@media (min-width: 700px) {
+    .about {
+        display: grid;
+        grid-template-columns: minmax(1.5em, 1fr) repeat(2, minmax(0, 450px)) minmax(1.5em, 1fr);
+        gap: 2em;
+    }
+
+    .page-title {
+        grid-column: 2 / 4;
+    }
+
+    div.img-holder1 {
+        grid-row-start: 2;
+    }
+
+    div.img-holder2 {
+        grid-row-start: 3;
+    }
+
+    .img-holder {
+        grid-column: 2;
+    }
+
+    .description-holder {
+        grid-column: 3;
+    }
+
+    .description-holder .headlines {
+        margin: 0;
+    }
+}
