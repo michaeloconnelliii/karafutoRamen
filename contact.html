@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>About</title>
+        <title>Contact</title>
         <link href="style.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,29 +25,33 @@
                 </div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="active-link" href="about.html">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#">Menu</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="active-link" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main class="about">
-            <h2 class="page-title">About us</h2>
+            <h2 class="page-title">Contact us</h2>
             <div class="description-holder">
-                <p class="headlines">We're passionate about quality Ramen. That means no shortcuts.</p>
-                <p class="description">Hinata Yamamoto grew up eating Ramen in Onomichi (Hiroshima). At age 13, he started working at Tsubame, a small, rustic, Showa-era shop that specializes in Hiroshima-style Ramen (similar to a chicken-based shoyu Ramen). After working at Tsubame for 10 years, Hinata decided to move to the United States for a new adventure and change of scenery. He opened Kurafuto Ramen in March, 2009 and brought his take on Hiroshima-style Ramen to Chicago.</p>
+                <form action="#" method="POST">
+                    
+                    <label for="fname">First Name</label>
+                    <input id="fname" type="text">
+                    
+                    <label for="lname">Last Name</label>
+                    <input id="lname" type="text">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+                    
+                    <button class="btn btn-primary">send</button>
+                </form>
             </div>
             <div class="img-holder img-holder1">
-                <img src="img/working.jpg">
-                <!-- <img src="img/restaurant.jpg"> -->
+                <img src="img/counter.jpg">
             </div>
-            <div class="description-holder">
-                <p class="headlines">Our mission is to give you the best experience possible.</p>
-                <p class="description">Kurafuto means "craft" in Japanese and the name is symbolic for the type of Ramen Hinata and his team create. Everything from the noodles to the tare are made in-house daily. The team works hard to give the people of Chicago the most delicious ramen in Illinois.</p>
-            </div>
-            <div class="img-holder img-holder2">
-                <img src="img/counter2.jpg">
-            </div>
+            
         </main>
         <footer class="footer main-grid">
             <p class="address">191 Johnstown Road Chicago, IL, 60606</p>

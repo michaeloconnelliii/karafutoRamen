@@ -584,3 +584,58 @@ footer > * {
         margin: 0;
     }
 }
+
+/* ======= CONTACT PAGE ======== */
+/* Typography */
+form label {
+    font-size: 0.7rem;
+}
+
+form textarea {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: inherit;
+}
+
+/* Form */
+form {
+    margin-bottom: 3em;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+label, form button {
+    display: block;
+}
+
+form button {
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 0.75em;
+    padding: 4px;
+}
+
+form input, form textarea {
+    width: 235px;
+}
+
+form textarea {
+    height: 80px;
+    resize: vertical;
+    min-height: 50px;
+    max-height: 180px;
+}
+
+form button {
+    width: 80px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+form button:hover, form button:focus {
+    background-color: lightgray;
+}
+
