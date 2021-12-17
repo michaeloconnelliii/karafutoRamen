@@ -596,6 +596,22 @@ form textarea {
     font-weight: inherit;
 }
 
+.tagline {
+    grid-column: 2 / 4;
+    grid-row-start: 2;
+}
+
+.headline-p {
+    font-size: 0.8rem;
+    margin: 1em auto;
+    max-width: 400px;
+}
+
+.contact {
+    margin-bottom: 0;
+    grid-row: 1;
+}
+
 /* Form */
 form {
     margin-bottom: 3em;
