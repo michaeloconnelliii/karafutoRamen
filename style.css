@@ -663,4 +663,31 @@ form button:hover, form button:focus {
 .menu .headlines {
     font-size: 1.8rem;
     text-align: center;
+    text-decoration: overline;
+    text-decoration-color: red;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    max-width: 600px;
+}
+
+.menu-item {
+    list-style-type: none;
+}
+
+.menu-item-title {
+    margin-top: 0;
+    margin-bottom: 0.35em;
+    font-size: 1rem;
+}
+
+.price {
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    font-weight: 700;
 }
