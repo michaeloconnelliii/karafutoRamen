@@ -655,3 +655,12 @@ form button:hover, form button:focus {
     background-color: lightgray;
 }
 
+/* ======= MENU PAGE ======== */
+.menu {
+    margin: 0 auto;
+}
+
+.menu .headlines {
+    font-size: 1.8rem;
+    text-align: center;
+}
