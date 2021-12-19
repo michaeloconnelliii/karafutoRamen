@@ -660,6 +660,17 @@ form button:hover, form button:focus {
     margin: 0 auto;
 }
 
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 1em;
+}
+
+.headline-container {
+    display: flex;
+    justify-content: center;
+}
+
 .menu .headlines {
     font-size: 1.8rem;
     text-align: center;
@@ -674,8 +685,13 @@ form button:hover, form button:focus {
     max-width: 600px;
 }
 
+.menu-items {
+    padding: 0;
+}
+
 .menu-item {
     list-style-type: none;
+    margin-right: 1.5em;
 }
 
 .menu-item-title {
@@ -684,10 +700,30 @@ form button:hover, form button:focus {
     font-size: 1rem;
 }
 
+.menu-item-description {
+    text-align: justify;
+    max-width: 260px;
+}
+
 .price {
+    width: 4em;
+    text-align: right;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+@media (min-width: 500px) {
+    .menu-item-description {
+        max-width: 500px;
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 700px) {
+    .menu-item-description {
+        max-width: auto;
+    }
 }
