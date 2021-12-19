@@ -1,4 +1,4 @@
-/* TODO - Add image for browser, fix github repo name, and fix html and accessibility compliance issues */
+/* TODO - fix browser resize carousel bug, fix github repo name, and fix html and accessibility compliance issues */
 
 /* ======= Global Styles ======= */
 * {
@@ -469,10 +469,6 @@ footer > * {
     .carousel {
         height: 50vh;
     }
-
-    .nav-open-btn {
-        /* margin-bottom: 1em; */
-    }
 }
 
 /* desktop layout */
@@ -536,6 +532,10 @@ footer > * {
     /* ======= Carousel ======= */
     .carousel {
         height: 65vh;
+    }
+
+    .carousel-track-container {
+        width: 100%;
     }
 
     .carousel-slide:nth-of-type(2) img{
