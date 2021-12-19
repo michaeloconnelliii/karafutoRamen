@@ -38,6 +38,12 @@ strong {
     font-family: 'Bebas Neue', cursive;
 }
 
+/* Stop playing transition momentarily on viewport resize. 
+   Source: https://stackoverflow.com/questions/63861504/pure-css-hamburger-menu-shows-up-when-resizing-viewport-before-disappearing */
+   body.stop-transition nav {
+    transition: none;
+}
+
 /* ======= MAIN PAGE ======== */
 
 /* ======= Typography ======= */
