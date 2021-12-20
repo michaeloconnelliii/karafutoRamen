@@ -9,7 +9,7 @@ const dots = Array.from(dotsNav.children);
 // Arrange slides next to one another
 let slideWidth = slides[0].getBoundingClientRect().width;
 
-// Update this value on browser resize
+// Update this value on browser resize so slides don't bleed into one another
 window.addEventListener('resize', () => {
     slideWidth = slides[0].getBoundingClientRect().width;
     slides.forEach(setSlidePosition);
