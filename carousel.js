@@ -7,7 +7,14 @@ const dotsNav = document.querySelector('.carousel-nav');
 const dots = Array.from(dotsNav.children);
 
 // Arrange slides next to one another
-const slideWidth = slides[0].getBoundingClientRect().width;
+let slideWidth = slides[0].getBoundingClientRect().width;
+
+// Update this value on browser resize
+window.addEventListener('resize', () => {
+    slideWidth = slides[0].getBoundingClientRect().width;
+    slides.forEach(setSlidePosition);
+});
+
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 };
