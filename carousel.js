@@ -8,11 +8,16 @@ const dots = Array.from(dotsNav.children);
 
 // Arrange slides next to one another
 let slideWidth = slides[0].getBoundingClientRect().width;
+let winWidth = window.innerWidth;
 
-// Update this value on browser resize so slides don't bleed into one another
+// Update this value on browser increase resize so slides don't bleed into one another
 window.addEventListener('resize', () => {
-    slideWidth = slides[0].getBoundingClientRect().width;
-    slides.forEach(setSlidePosition);
+    let newWinWidth = window.innerWidth;
+    if(newWinWidth > winWidth) {
+        slideWidth = slides[0].getBoundingClientRect().width;
+        slides.forEach(setSlidePosition);
+        winWidth = newWinWidth;
+    }
 });
 
 const setSlidePosition = (slide, index) => {
