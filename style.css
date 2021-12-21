@@ -65,13 +65,17 @@ body {
     font-weight: 700;
 }
 
+.main-page-header {
+    margin-top: -10px;
+}
+
 header {
     position: relative;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 /* Nav */
@@ -325,6 +329,7 @@ footer {
 
 footer > * {
     grid-column: 2;
+    margin-bottom: 0.25em;
 }
 
 .contributors, .address {
