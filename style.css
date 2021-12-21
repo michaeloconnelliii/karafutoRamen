@@ -329,7 +329,6 @@ footer {
 
 footer > * {
     grid-column: 2;
-    margin-bottom: 0.25em;
 }
 
 .contributors, .address {
